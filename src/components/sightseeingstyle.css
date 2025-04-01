@@ -1,0 +1,70 @@
+.card-section-container {
+  background-color: #0f0f0f;
+  padding: 3rem;
+}
+
+.card-container {
+  max-width: 100%;
+  /* aspect-ratio: 1; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background: transparent;
+}
+
+.card {
+  width: 170px;
+  height: 300px;
+  cursor: pointer;
+  border: none;
+}
+
+.card:nth-child(even) {
+  margin-top: 1rem;
+}
+
+.card.open {
+  flex: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(50%);
+}
+
+.card-content-container {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: rgba(88, 88, 88, 0.2);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+
+.card-content-content,
+.card-content-content * {
+  background: transparent;
+  color: white;
+  max-width: 400px;
+}
+
+.card-header {
+  font-family: "Yeseva One", serif;
+  margin: 0;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.card-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-left: 2em;
+}

@@ -1,0 +1,73 @@
+.section-container {
+  margin: 3rem 0;
+  overflow-x: hidden;
+}
+
+.section-title {
+  font-family: "Yeseva One", serif;
+  padding-left: 3rem;
+}
+
+.small {
+    color: #ffc814;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    
+}
+
+.big {
+    color: #292929;
+    margin-left: .3em;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    
+}
+
+/* Default card size for mobile */
+.room-container {
+  width: 340px;
+  margin-left: 3vw;
+}
+
+.room-img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.room-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 0.5em;
+}
+
+/* On larger screens, increase the card size */
+@media (min-width: 768px) {
+  .room-container {
+    width: 500px;
+  }
+  .room-img {
+    width: 500px;
+    height: 450px;
+  }
+  .room-title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .room-container {
+    width: 600px;
+  }
+  .room-img {
+    width: 600px;
+    height: 500px;
+  }
+  .room-title {
+    font-size: 2.2rem;
+  }
+}
+
+
+.slick-list {
+  max-height: 730px!important;
+
+}

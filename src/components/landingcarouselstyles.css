@@ -1,0 +1,47 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.7);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fffff5;
+}
+
+.overlay-title {
+  /* font-size: 3.5rem; */
+  font-family: "Yeseva One", serif;
+  font-size: clamp(1.5rem, 6vw, 3.5rem);
+  background: transparent;
+}
+
+.overlay-button {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1.5em;
+  background: transparent;
+  color: #ffc814;
+  border: 1px solid #ffc814;
+  font-size: clamp(0.65rem, 2vw, 1.125rem);
+
+  /* font-size: 1.125rem; */
+  padding: 0.8em 1.56em;
+  border-radius: 5px;
+}
