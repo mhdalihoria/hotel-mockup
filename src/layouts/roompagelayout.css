@@ -109,15 +109,18 @@
 }
 
 .slick-dots li button::before {
-  width: 40;
-  height: 40;
+  width: 34px;
+  height: 34px;
   font-size: 0.875rem;
   color: #585858;
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .slick-dots li.slick-active button::before {
-  padding: 10px;
   color: #ffc814;
   border: 1px solid #ffc814;
   border-radius: 100%;
