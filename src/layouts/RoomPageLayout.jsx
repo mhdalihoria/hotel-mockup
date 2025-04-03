@@ -1,17 +1,20 @@
-import "./roompagelayout.css";
+import Slider from "react-slick";
 import Img1 from "../assets/1.jpg";
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import space from "../assets/space.svg";
 import ac from "../assets/ac.svg";
 import bed from "../assets/bed.svg";
 import tv from "../assets/tv.svg";
-import Slider from "react-slick";
+import Balcon from "../assets/balcony.jpg";
+import { FaArrowRightLong } from "react-icons/fa6";
+import "./roompagelayout.css";
 
 export default function RoomPageLayout() {
   return (
     <div>
       <IntroSection />
       <CarouselSection />
+      <EnjoySection />
     </div>
   );
 }
@@ -41,19 +44,19 @@ function IntroSection() {
           </Col>
         </Row>
         <Row className="grid-row" style={{ marginTop: "5rem" }}>
-          <Col sm={6} md={4} lg={3} className="sub-intro--icon-block">
+          <Col xs={6} sm={6} md={4} lg={3} className="sub-intro--icon-block">
             <img src={space} className="icon" />
             <span className="icon-text">10 - 15&#13217;</span>
           </Col>
-          <Col sm={6} md={4} lg={3} className="sub-intro--icon-block">
+          <Col xs={6} sm={6} md={4} lg={3} className="sub-intro--icon-block">
             <img src={bed} className="icon" />
             <span className="icon-text">10 - 15&#13217;</span>
           </Col>
-          <Col sm={6} md={4} lg={3} className="sub-intro--icon-block">
+          <Col xs={6} sm={6} md={4} lg={3} className="sub-intro--icon-block">
             <img src={ac} className="icon" />
             <span className="icon-text">10 - 15&#13217;</span>
           </Col>
-          <Col sm={6} md={4} lg={3} className="sub-intro--icon-block">
+          <Col xs={6} sm={6} md={4} lg={3} className="sub-intro--icon-block">
             <img src={tv} className="icon" />
             <span className="icon-text">10 - 15&#13217;</span>
           </Col>
@@ -65,7 +68,7 @@ function IntroSection() {
 
 function CarouselSection() {
   const settings = {
-    arrows: true,
+    // arrows: true,
     dots: true,
     infinite: true,
     speed: 1000,
@@ -84,7 +87,7 @@ function CarouselSection() {
     <div className="slider-container">
       <Slider
         {...settings}
-        style={{ maxHeight: "530px", overflow: "hidden", position: "relative" }}
+        style={{ maxHeight: "630px", overflow: "hidden", position: "relative" }}
       >
         {roomImgs.map((room) => (
           <div key={room.name}>
@@ -96,6 +99,50 @@ function CarouselSection() {
           </div>
         ))}
       </Slider>
+    </div>
+  );
+}
+
+function EnjoySection() {
+  const featuresArr = [
+    "Everything is automated, you can open doors with our app",
+    "Checking in and out can be done through our app too",
+    "Enjoy High Quality Service",
+  ];
+
+  return (
+    <div className="enjoy-container">
+      <Container fluid className="enjoy-sub-container">
+        <Row className="grid-row">
+          <Col md={6} sm={12} className="enjoy-img">
+            <img src={Balcon} alt="image" />
+          </Col>
+          <Col md={6} sm={12} className="enjoy-description">
+            <h1 className="enjoy-header">
+              <span>Your Comfort</span>
+              Our Priority
+            </h1>
+            <p className="enjoy-paragraph">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua.
+            </p>
+            <ul className="enjoy-features">
+              {featuresArr.map((feature) => (
+                <li key={feature} className="enjoy-feature">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <button className="enjoy-btn">
+              Book a Room{" "}
+              <FaArrowRightLong
+                style={{ marginLeft: "10px", fill: "#ffc814" }}
+              />
+            </button>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

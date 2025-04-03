@@ -89,7 +89,8 @@
 
 .slider-container {
   background: #292929;
-  padding: 3rem 0;
+  padding: 0;
+  padding-top: 3rem;
 }
 /* 
 .slick-list {
@@ -117,7 +118,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .slick-dots li.slick-active button::before {
@@ -126,3 +126,90 @@
   border-radius: 100%;
 }
 /* SLIDER CAROUSEL - END */
+
+/* ENJOY SECTION - START */
+
+.enjoy-container > * {
+  background: transparent;
+}
+
+.enjoy-container {
+  padding: 3rem 0;
+  background: #585858;
+}
+
+.enjoy-img {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.enjoy-img img {
+  max-width: 400px;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.enjoy-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.enjoy-header {
+  font-family: "Yeseva One", serif;
+  letter-spacing: 1px;
+  margin-bottom: 1.2em;
+}
+.enjoy-header span {
+  color: #ffc814;
+  margin-right: 10px;
+  font-size: 3rem;
+}
+
+.enjoy-paragraph,
+.enjoy-features,
+.enjoy-btn {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.enjoy-paragraph {
+}
+
+.enjoy-features {
+  padding-left: 1rem;
+}
+
+.enjoy-features li {
+  padding-top: 1em;
+}
+.enjoy-features li::marker {
+  color: #ffc814;
+}
+
+.enjoy-btn {
+  background: rgba(255, 200, 20, 0.1);
+  color: #ffc814;
+  border: 2px solid #ffc814;
+  border-radius: 5px;
+  margin-top: 1.5em;
+  padding: 0.5em 1.25em;
+  font-size: clamp(0.65rem, 2vw, 1.125rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .enjoy-img img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+  }
+}
+/* ENJOY SECTION - END */
