@@ -1,0 +1,125 @@
+/* INTRO IMAGE WITH OVERLAY - START */
+
+.intro-img-container {
+  position: relative;
+  width: 100%;
+  max-height: 70vh;
+  overflow: hidden;
+}
+
+.intro-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.7);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fffff5;
+}
+
+.overlay-title {
+  /* font-size: 3.5rem; */
+  font-family: "Yeseva One", serif;
+  font-size: clamp(1.5rem, 6vw, 3.5rem);
+  background: transparent;
+}
+
+.overlay-subtitle {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1.5em;
+  background: transparent;
+  /* color: #ffc814; */
+  color: white;
+  border: none;
+  font-size: clamp(0.65rem, 2vw, 1.125rem);
+
+  /* font-size: 1.125rem; */
+  padding: 0.8em 1.56em;
+  border-radius: 5px;
+}
+
+/* INTRO IMAGE WITH OVERLAY -END */
+
+/* SUB-INTRO WITH DETAILS - START */
+
+.sub-intro-container {
+  background: #292929;
+  width: 100%;
+  margin: 0;
+  padding: 4rem 0;
+}
+
+.grid-row,
+.grid-row * {
+  background: transparent;
+  color: white;
+}
+
+.grid-row {
+  max-width: 90%;
+  margin: auto;
+}
+
+.sub-intro--icon-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sub-intro--icon-block .icon {
+  width: 62px;
+}
+
+/* SUB-INTRO WITH DETAILS - END */
+
+/* SLIDER CAROUSEL - START */
+
+.slider-container {
+  background: #292929;
+  padding: 3rem 0;
+}
+/* 
+.slick-list {
+  max-height: 530px !important; 
+} */
+
+.slick-dots,
+.slick-dots * {
+  transform: translateY(-100%);
+  background: transparent;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.slick-dots li button::before {
+  width: 40;
+  height: 40;
+  font-size: 0.875rem;
+  color: #585858;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button::before {
+  padding: 10px;
+  color: #ffc814;
+  border: 1px solid #ffc814;
+  border-radius: 100%;
+}
+/* SLIDER CAROUSEL - END */
