@@ -15,6 +15,7 @@ export default function RoomPageLayout() {
       <IntroSection />
       <CarouselSection />
       <EnjoySection />
+      <RelatedSection />
     </div>
   );
 }
@@ -143,6 +144,39 @@ function EnjoySection() {
           </Col>
         </Row>
       </Container>
+    </div>
+  );
+}
+
+function RelatedSection() {
+  const relatedArr = [
+    { img: Img1, title: "Double Room" },
+    { img: Img1, title: "Double Room" },
+    { img: Img1, title: "Double Room" },
+  ];
+
+  return (
+    <div className="related-section-container">
+      <div className="related-section-content">
+        <h1>Discover More</h1>
+        <Container fluid className="related-rooms">
+          <Row>
+            {relatedArr.map((room) => (
+              <Col
+                key={room.title}
+                className="related-room"
+                xs={12}
+                sm={6}
+                lg={4}
+                
+              >
+                <img src={room.img} className="room-img" />
+                <p className="room-title">{room.title}</p>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }

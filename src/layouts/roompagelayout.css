@@ -213,3 +213,35 @@
   }
 }
 /* ENJOY SECTION - END */
+
+/* RELATED ROOMS SECTION - START */
+.related-section-container {
+  background: #292929;
+  padding: 4rem 0;
+}
+
+.related-section-content,
+.related-section-content * {
+  background: transparent;
+}
+
+.related-section-content {
+  width: 90%;
+  margin: auto;
+  color: #fff;
+}
+
+.related-room {
+  margin-bottom: 1.25rem;
+}
+
+.room-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.room-title {
+  font-size: 1.5rem;
+}
+/* RELATED ROOMS SECTION - START */
