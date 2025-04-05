@@ -124,8 +124,8 @@ function EnjoySection() {
           </Col>
           <Col md={6} sm={12} className="enjoy-description">
             <h1 className="enjoy-header">
-              <span>Your Comfort</span>
-              Our Priority
+              <span className="colored">Your Comfort</span>
+              <span className="white">Our Priority</span>
             </h1>
             <p className="enjoy-paragraph">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -162,7 +162,11 @@ function RelatedSection() {
   return (
     <div className="related-section-container">
       <div className="related-section-content">
-        <h1>Discover More</h1>
+        <div className="related-section-title">
+        {/* <h1>You Can Also Enjoy Our</h1> */}
+        <h1>Discover Our</h1>
+        <span>Rooms & Halls</span>
+        </div>
         <Container fluid className="related-rooms">
           <Row>
             {relatedArr.map((room) => (
