@@ -3,7 +3,7 @@
 .intro-img-container {
   position: relative;
   width: 100%;
-  max-height: 70vh;
+  max-height: 700px;
   overflow: hidden;
 }
 
@@ -67,8 +67,46 @@
 }
 
 .grid-row {
-  max-width: 90%;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
+}
+
+.sub-intro--title {
+  font-family: "Yeseva One", serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.sub-intro--title p {
+  font-size: 1.12rem;
+  color: #ffc814;
+  letter-spacing: 3px;
+  margin-bottom: -10px;
+  margin-left: 5.5rem;
+}
+
+.sub-intro--title span {
+  margin-left: 5.5rem;
+  font-size: 3rem;
+}
+
+.sub-intro--title .backdrop {
+  color: #ffc814;
+  font-size: 5rem;
+  opacity: 0.05;
+  position: absolute;
+  z-index: 1;
+  left: -400px;
+  width: 1000%;
+  top: 10px;
+}
+
+.sub-intro--paragraph {
+  letter-spacing: 1px;
+  line-height: 2.1em;
 }
 
 .sub-intro--icon-block {
@@ -77,6 +115,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 1.5rem;
 }
 
 .sub-intro--icon-block .icon {
@@ -138,11 +177,16 @@
   background: #585858;
 }
 
+.enjoy-sub-container {
+  width: 90%;
+  max-width: 1400px;
+}
+
 .enjoy-img {
   position: relative;
-  display: flex;
+  /* display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: center; */
 }
 
 .enjoy-img img {
@@ -150,7 +194,23 @@
   width: 100%;
   height: 600px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.enjoy-img .frame {
+  max-width: 400px;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+  left: 40px;
+  bottom: -21px;
+  border: 1px solid #ffc814;
+  border-radius: 15px;
+  background: #4d4d4d;
+  opacity: 0.9;
 }
 
 .enjoy-description {
@@ -183,6 +243,7 @@
 
 .enjoy-features {
   padding-left: 1rem;
+  margin: 0;
 }
 
 .enjoy-features li {
@@ -227,18 +288,30 @@
 
 .related-section-content {
   width: 90%;
+  max-width: 1200px;
   margin: auto;
+  /* padding-left: 5rem; */
   color: #fff;
 }
 
 .related-room {
   margin-bottom: 1.25rem;
+  max-width: 400px; /* Feel free to adjust this */
+  margin-left: -1rem;
+  margin-right: auto;
 }
+
+/* .room-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+} */
 
 .room-img {
   width: 100%;
   height: auto;
   border-radius: 5px;
+  padding: 0.5rem; /* Optional: gives the image some breathing room */
 }
 
 .room-title {

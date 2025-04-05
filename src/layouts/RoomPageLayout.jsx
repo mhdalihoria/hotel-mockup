@@ -37,14 +37,17 @@ function IntroSection() {
           <Col md={6} sm={12} className="sub-intro--title">
             <p>Private & Luxurious</p>
             <span>Single Room</span>
+            <span className="backdrop">Private Luxury</span>
           </Col>
           <Col md={6} sm={12} className="sub-intro--paragraph">
-            More than just a room— your personal escape. Relax in a modern space
-            with premium bedding, elegant touches, and everything you need to
-            unwind in peace.
+            <p>
+              More than just a room— your personal escape. Relax in a modern
+              space with premium bedding, elegant touches, and everything you
+              need to unwind in peace.
+            </p>
           </Col>
         </Row>
-        <Row className="grid-row" style={{ marginTop: "5rem" }}>
+        <Row className="grid-row" style={{ marginTop: "6rem" }}>
           <Col xs={6} sm={6} md={4} lg={3} className="sub-intro--icon-block">
             <img src={space} className="icon" />
             <span className="icon-text">10 - 15&#13217;</span>
@@ -117,6 +120,7 @@ function EnjoySection() {
         <Row className="grid-row">
           <Col md={6} sm={12} className="enjoy-img">
             <img src={Balcon} alt="image" />
+            <div className="frame"></div>
           </Col>
           <Col md={6} sm={12} className="enjoy-description">
             <h1 className="enjoy-header">
@@ -168,7 +172,6 @@ function RelatedSection() {
                 xs={12}
                 sm={6}
                 lg={4}
-                
               >
                 <img src={room.img} className="room-img" />
                 <p className="room-title">{room.title}</p>
