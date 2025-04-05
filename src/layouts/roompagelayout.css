@@ -330,8 +330,7 @@
 .room-img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
-  padding: 0.5rem; /* Optional: gives the image some breathing room */
+  border-radius: 15px;
 }
 
 .room-title {
