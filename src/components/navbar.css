@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 
-.nav-hamburger:hover{
+.nav-hamburger:hover {
   opacity: 0.7;
 }
 
@@ -64,4 +64,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.offcanvas * {
+  background: transparent;
+  margin: 0;
+}
+
+.offcanvas {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  width: 100%;
+  height: fit-content !important;
+  overflow: hidden;
+}
+
+.offcanvas-header {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.offcanvas-header button {
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.nav-items {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.nav-items span {
+  font-family: "Yeseva One", serif;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
 }
