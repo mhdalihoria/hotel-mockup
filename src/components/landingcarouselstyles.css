@@ -1,7 +1,7 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  max-height: 90vh;
+  max-height: 700px;
   overflow: hidden;
 }
 
@@ -26,11 +26,29 @@
   color: #fffff5;
 }
 
+.overlay-title * {
+  background: transparent;
+}
+
 .overlay-title {
   /* font-size: 3.5rem; */
   font-family: "Yeseva One", serif;
-  font-size: clamp(1.5rem, 6vw, 3.5rem);
-  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay-title span {
+  font-size: clamp(.875rem, 6vw, 1.5rem);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.overlay-title p {
+  font-size: clamp(1.75rem, 6vw, 4.5rem);
+  margin: .25em auto;
 }
 
 .overlay-button {

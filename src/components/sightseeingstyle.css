@@ -1,16 +1,17 @@
 .card-section-container {
-  background-color: #0f0f0f;
+  background-color: #585858;
   padding: 3rem;
 }
 
 .card-container {
-  max-width: 100%;
+  max-width: 1200px;
+  width: 100%;
+  background: transparent;
   /* aspect-ratio: 1; */
   position: relative;
   display: flex;
   flex-direction: row;
   gap: 10px;
-  background: transparent;
 }
 
 .card {
@@ -18,9 +19,10 @@
   height: 300px;
   cursor: pointer;
   border: none;
+  border-radius: 15px;
 }
 
-.card:nth-child(even) {
+.card:nth-child(odd) {
   margin-top: 1rem;
 }
 
@@ -33,7 +35,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  filter: brightness(50%);
+  /* filter: brightness(50%); */
 }
 
 .card-content-container {
@@ -41,7 +43,7 @@
   z-index: 3;
   width: 100%;
   height: 100%;
-  background: rgba(88, 88, 88, 0.2);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -54,17 +56,20 @@
   background: transparent;
   color: white;
   max-width: 400px;
+  margin-left: 1rem;
 }
 
 .card-header {
   font-family: "Yeseva One", serif;
   margin: 0;
+  color: #ffc814;
   font-size: 2.5rem;
-  font-style: italic;
+  letter-spacing: 2px;
+  /* font-style: italic; */
 }
 
 .card-paragraph {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  margin-left: 2em;
+  /* margin-left: 2em; */
 }

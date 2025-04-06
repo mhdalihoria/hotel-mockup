@@ -1,29 +1,55 @@
+.section-container,
+.section-container * {
+  background: #292929;
+}
 .section-container {
-  margin: 3rem 0;
+  padding: 4rem 0;
   overflow-x: hidden;
+  width: 100%;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title * {
+  background: transparent;
 }
 
 .section-title {
   font-family: "Yeseva One", serif;
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 }
 
 .small {
-    color: #ffc814;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    
+  /* font-size: clamp(1rem, 2vw, 1.5rem); */
+  margin-left: 2.5rem;
+  color: #ffc814;
+  letter-spacing: 3px;
+  font-size: 1.12rem;
+  margin-bottom: -10px;
 }
 
 .big {
-    color: #292929;
-    margin-left: .3em;
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    
+  margin-left: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: #fff;
+  /* font-size: clamp(1.5rem, 4vw, 2rem); */
 }
 
+.slider-container {
+  padding-top: 2rem!important;
+}
 /* Default card size for mobile */
 .room-container {
-  width: 340px;
+  max-width: 340px;
   margin-left: 3vw;
 }
 
@@ -37,6 +63,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   margin-top: 0.5em;
+  color: #fff;
 }
 
 /* On larger screens, increase the card size */
@@ -66,8 +93,6 @@
   }
 }
 
-
 .slick-list {
-  max-height: 730px!important;
-
+  max-height: 730px !important;
 }

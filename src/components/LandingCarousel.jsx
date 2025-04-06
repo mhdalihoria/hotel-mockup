@@ -28,8 +28,12 @@ function CarouselCompnent() {
         </Carousel.Item>
       </Carousel>
       <div className="overlay">
-        <div className="overlay-title">Elegance & Comfort</div>
-        <button className="overlay-button">Book a Room</button>
+        <div className="overlay-title">
+          <span>Welcome to</span>
+          <p>Pallas Hotel</p>
+          <span>Darmstadt</span>
+        </div>
+        {/* <button className="overlay-button">Book a Room</button> */}
       </div>
     </div>
   );

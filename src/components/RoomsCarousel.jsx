@@ -5,8 +5,12 @@ import "./roomscarouselstyle.css";
 
 export default function RoomsCarousel() {
   const settings = {
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
     infinite: true,
-    speed: 500,
     slidesToShow: 2, // We'll adjust number with CSS if needed
     slidesToScroll: 1,
     variableWidth: true,
@@ -37,18 +41,20 @@ export default function RoomsCarousel() {
 
   return (
     <div className="section-container">
-      <div className="section-title">
-        <span className="small">Explore</span>
-        <span className="big">Room Options</span>
+      <div className="section-content">
+        <div className="section-title">
+          <span className="small">Enjoy Our</span>
+          <span className="big">Room Selection</span>
+        </div>
+        <Slider {...settings} className="slider-container">
+          {roomTypes.map((room) => (
+            <div key={room.name} className="room-container">
+              <img src={room.img} alt={room.name} className="room-img" />
+              <p className="room-title">{room.name}</p>
+            </div>
+          ))}
+        </Slider>
       </div>
-      <Slider {...settings} >
-        {roomTypes.map((room) => (
-          <div key={room.name} className="room-container">
-            <img src={room.img} alt={room.name} className="room-img" />
-            <p className="room-title">{room.name}</p>
-          </div>
-        ))}
-      </Slider>
     </div>
   );
 }
