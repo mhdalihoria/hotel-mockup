@@ -66,6 +66,8 @@
   align-items: center;
 }
 
+/*  OFFCANVAS STYLING*/
+
 .offcanvas * {
   background: transparent;
   margin: 0;
@@ -92,12 +94,19 @@
   font-size: 2rem;
 }
 
+.offcanvas-body {
+  display: flex;
+  overflow: hidden;
+}
+
 .nav-items {
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-evenly;
   gap: 1rem;
+  min-width: 300px !important;
 }
 
 .nav-items span {
@@ -105,4 +114,76 @@
   font-size: 2rem;
   /* text-transform: uppercase; */
   letter-spacing: 2px;
+}
+
+.nav-items span:hover {
+  color: #ffc814;
+  cursor: pointer;
+}
+
+/* Carousel Styles */
+
+.section-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-title * {
+  background: transparent;
+}
+
+.section-title {
+  font-family: "Yeseva One", serif;
+  /* padding-left: 3rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.title {
+  margin-left: 3.5rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: #ffc814;
+  /* font-size: clamp(1.5rem, 4vw, 2rem); */
+}
+
+.and {
+  color: #fff;
+}
+
+.slider-container {
+  padding-top: 2rem !important;
+}
+/* Default card size for mobile */
+.room-container {
+  max-width: 340px;
+  margin-left: 3vw;
+}
+
+.room-img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.room-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 0.5em;
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  .section-content {
+    display: none;
+  }
+
+  .nav-items {
+   width: 100% !important;
+   align-items: center;
+   gap: 20px;
+  }
 }
