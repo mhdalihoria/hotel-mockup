@@ -5,12 +5,14 @@
   right: 0;
   height: 60px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 
   max-width: 1200px;
+  width: 90%;
   border-radius: 100px;
   background-color: transparent;
 }
@@ -21,14 +23,45 @@
   position: absolute;
   inset: 0;
   background: rgba(40, 40, 40, 0.5);
-  backdrop-filter: blur(8px); 
-  z-index: -1; 
+  backdrop-filter: blur(8px);
+  z-index: -1;
 }
 
 .navbar.hidden {
   transform: translateY(-100%);
 }
 
+.navbar.visible,
+.navbar.visible * {
+  background: transparent;
+}
+
 .navbar.visible {
   transform: translateY(0);
+  color: #fff;
+  margin: auto;
+}
+
+.nav-hamburger {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-hamburger:hover{
+  opacity: 0.7;
+}
+
+.nav-cta {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+  background: rgba(255, 200, 20, 0.1);
+  color: #ffc814;
+  /* border: 2px solid #ffc814; */
+  /* border-radius: 5px; */
+  border: none;
+  padding: 0.5em 1.25em;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

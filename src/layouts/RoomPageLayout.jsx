@@ -140,7 +140,7 @@ function EnjoySection() {
               ))}
             </ul>
             <button className="enjoy-btn">
-              Book a Room{" "}
+              Book a Room
               <FaArrowRightLong
                 style={{ marginLeft: "10px", fill: "#ffc814" }}
               />
