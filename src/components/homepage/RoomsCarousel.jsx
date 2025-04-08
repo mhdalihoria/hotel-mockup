@@ -10,7 +10,7 @@ export default function RoomsCarousel() {
     dots: false,
     pauseOnHover: false,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2500,
     infinite: true,
     slidesToShow: 2, // We'll adjust number with CSS if needed
     slidesToScroll: 1,

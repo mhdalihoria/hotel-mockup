@@ -11,7 +11,7 @@ function CarouselCompnent() {
       <Carousel
         controls={false}
         indicators={false}
-        interval={2000}
+        interval={6000}
         pause={false}
       >
         <Carousel.Item>
