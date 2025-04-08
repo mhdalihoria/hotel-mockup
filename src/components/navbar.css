@@ -123,16 +123,16 @@
 
 /* Carousel Styles */
 
-.section-content {
+.nav-carousel-content {
   width: 100%;
   margin: 0 auto;
 }
 
-.section-title * {
+.nav-carousel-title * {
   background: transparent;
 }
 
-.section-title {
+.nav-carousel-title {
   font-family: "Yeseva One", serif;
   /* padding-left: 3rem; */
   display: flex;
@@ -154,7 +154,7 @@
   color: #fff;
 }
 
-.slider-container {
+.nav-slider-container {
   padding-top: 2rem !important;
 }
 /* Default card size for mobile */
@@ -177,13 +177,13 @@
 }
 
 @media (max-width: 850px) {
-  .section-content {
+  .nav-carousel-content {
     display: none;
   }
 
   .nav-items {
-   width: 100% !important;
-   align-items: center;
-   gap: 20px;
+    width: 100% !important;
+    align-items: center;
+    gap: 20px;
   }
 }

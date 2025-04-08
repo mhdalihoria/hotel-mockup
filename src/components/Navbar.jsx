@@ -127,13 +127,13 @@ export default function Navbar() {
               <span>{item.label}</span>
             ))}
           </div>
-          <div className="section-content">
-            <div className="section-title">
+          <div className="nav-carousel-content">
+            <div className="nav-carousel-title">
               <span className="title">
                 Rooms <span className="and">&</span> Halls{" "}
               </span>
             </div>
-            <Slider {...settings} className="slider-container">
+            <Slider {...settings} className="nav-slider-container">
               {roomTypes.map((room) => (
                 <div key={room.name} className="room-container">
                   <img src={room.img} alt={room.name} className="room-img" />
