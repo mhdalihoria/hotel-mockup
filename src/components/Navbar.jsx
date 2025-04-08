@@ -9,8 +9,11 @@ import TwinRoom from "../assets/twin-room.jpg";
 import MeetingRoom from "../assets/meeting-room.jpg";
 import "./navbar.css";
 import Slider from "react-slick";
+import { useNavigate } from "react-router";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
   const settings = {
     arrows: false,
     dots: false,
@@ -89,10 +92,10 @@ export default function Navbar() {
   ];
 
   const roomTypes = [
-    { img: SingleRoom, name: "Single Room" },
-    { img: DoubleRoom, name: "Double Room" },
-    { img: TwinRoom, name: "Twin Room" },
-    { img: MeetingRoom, name: "Meeting Room" },
+    { img: SingleRoom, name: "Single Room", href: "/single-room" },
+    { img: DoubleRoom, name: "Double Room", href: "/single-room" },
+    { img: TwinRoom, name: "Twin Room", href: "/single-room" },
+    { img: MeetingRoom, name: "Meeting Room", href: "/single-room" },
   ];
 
   return (
@@ -137,7 +140,14 @@ export default function Navbar() {
             </div>
             <Slider {...settings} className="nav-slider-container">
               {roomTypes.map((room) => (
-                <div key={room.name} className="room-container">
+                <div
+                  key={room.name}
+                  className="room-container"
+                  onClick={() => {
+                    navigate(room.href);
+                    setShowOffcanvas(false);
+                  }}
+                >
                   <img src={room.img} alt={room.name} className="room-img" />
                   <p className="room-title">{room.name}</p>
                 </div>

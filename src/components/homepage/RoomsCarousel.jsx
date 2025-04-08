@@ -5,8 +5,11 @@ import DoubleRoom from "../../assets/double-room.jpg";
 import TwinRoom from "../../assets/twin-room.jpg";
 import MeetingRoom from "../../assets/meeting-room.jpg";
 import "./homepage.css";
+import { useNavigate } from "react-router";
 
 export default function RoomsCarousel() {
+  const navigate = useNavigate();
+
   const settings = {
     arrows: false,
     dots: false,
@@ -51,7 +54,11 @@ export default function RoomsCarousel() {
         </div>
         <Slider {...settings} className="slider-container">
           {roomTypes.map((room) => (
-            <div key={room.name} className="room-container">
+            <div
+              key={room.name}
+              className="room-container"
+              onClick={() => navigate("/single-room")}
+            >
               <img src={room.img} alt={room.name} className="room-img" />
               <p className="room-title">{room.name}</p>
             </div>

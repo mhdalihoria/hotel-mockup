@@ -11,6 +11,7 @@ import tv from "../assets/tv.svg";
 import Balcon from "../assets/balcony.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import "./roompagelayout.css";
+import { useNavigate } from "react-router";
 
 export default function RoomPageLayout() {
   return (
@@ -156,10 +157,12 @@ function EnjoySection() {
 }
 
 function RelatedSection() {
+  const navigate = useNavigate();
+
   const relatedArr = [
-    { img: DoubleRoom, title: "Double Room" },
-    { img: TwinRoom, title: "Twin Room" },
-    { img: MeetingRoom, title: "Meeting Room" },
+    { img: DoubleRoom, title: "Double Room", href: "/single-room" },
+    { img: TwinRoom, title: "Twin Room", href: "/single-room" },
+    { img: MeetingRoom, title: "Meeting Room", href: "/single-room" },
   ];
 
   return (
@@ -179,6 +182,7 @@ function RelatedSection() {
                 xs={12}
                 sm={6}
                 lg={4}
+                onClick={() => navigate(room.href)}
               >
                 <img src={room.img} className="room-img" />
                 <p className="room-title">{room.title}</p>
