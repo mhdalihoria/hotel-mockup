@@ -1,5 +1,8 @@
 import Slider from "react-slick";
 import Img1 from "../assets/1.jpg";
+import DoubleRoom from "../assets/double-room.jpg";
+import TwinRoom from "../assets/twin-room.jpg";
+import MeetingRoom from "../assets/meeting-room.jpg";
 import { Col, Container, Row } from "react-bootstrap";
 import space from "../assets/space.svg";
 import ac from "../assets/ac.svg";
@@ -154,18 +157,18 @@ function EnjoySection() {
 
 function RelatedSection() {
   const relatedArr = [
-    { img: Img1, title: "Double Room" },
-    { img: Img1, title: "Double Room" },
-    { img: Img1, title: "Double Room" },
+    { img: DoubleRoom, title: "Double Room" },
+    { img: TwinRoom, title: "Twin Room" },
+    { img: MeetingRoom, title: "Meeting Room" },
   ];
 
   return (
     <div className="related-section-container">
       <div className="related-section-content">
         <div className="related-section-title">
-        {/* <h1>You Can Also Enjoy Our</h1> */}
-        <h1>Discover Our</h1>
-        <span>Rooms & Halls</span>
+          {/* <h1>You Can Also Enjoy Our</h1> */}
+          <h1>Discover Our</h1>
+          <span>Rooms & Halls</span>
         </div>
         <Container fluid className="related-rooms">
           <Row>

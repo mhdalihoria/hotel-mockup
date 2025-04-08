@@ -1,8 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import SingleRoom from "../../assets/single-room.jpg";
+import DoubleRoom from "../../assets/double-room.jpg";
+import TwinRoom from "../../assets/twin-room.jpg";
+import MeetingRoom from "../../assets/meeting-room.jpg";
 import "./homepage.css";
-
 
 export default function RoomsCarousel() {
   const settings = {
@@ -35,9 +37,9 @@ export default function RoomsCarousel() {
 
   const roomTypes = [
     { img: SingleRoom, name: "Single Room" },
-    { img: SingleRoom, name: "Double Room" },
-    { img: SingleRoom, name: "Twin Room" },
-    { img: SingleRoom, name: "Meeting Room" },
+    { img: DoubleRoom, name: "Double Room" },
+    { img: TwinRoom, name: "Twin Room" },
+    { img: MeetingRoom, name: "Meeting Room" },
   ];
 
   return (

@@ -4,7 +4,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Offcanvas } from "react-bootstrap";
 import { IoMdClose } from "react-icons/io";
 import SingleRoom from "../assets/single-room.jpg";
-
+import DoubleRoom from "../assets/double-room.jpg";
+import TwinRoom from "../assets/twin-room.jpg";
+import MeetingRoom from "../assets/meeting-room.jpg";
 import "./navbar.css";
 import Slider from "react-slick";
 
@@ -88,9 +90,9 @@ export default function Navbar() {
 
   const roomTypes = [
     { img: SingleRoom, name: "Single Room" },
-    { img: SingleRoom, name: "Double Room" },
-    { img: SingleRoom, name: "Twin Room" },
-    { img: SingleRoom, name: "Meeting Room" },
+    { img: DoubleRoom, name: "Double Room" },
+    { img: TwinRoom, name: "Twin Room" },
+    { img: MeetingRoom, name: "Meeting Room" },
   ];
 
   return (
