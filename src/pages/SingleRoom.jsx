@@ -1,4 +1,4 @@
-import RoomPageLayout from "./layouts/RoomPageLayout";
+import RoomPageLayout from "../layouts/RoomPageLayout";
 
 export default function SingleRoom() {
   return <RoomPageLayout />;

@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import SingleRoom from "../assets/single-room.jpg";
-import "./roomscarouselstyle.css";
+import SingleRoom from "../../assets/single-room.jpg";
+import "./homepage.css";
+
 
 export default function RoomsCarousel() {
   const settings = {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./sightseeingstyle.css";
-import Place1 from "../assets/place1.jpg";
+import Place1 from "../../assets/place1.jpg";
+import "./homepage.css";
+
 
 export default function Sightseeing() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -12,7 +13,7 @@ export default function Sightseeing() {
   ];
 
   const handleClick = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex(openIndex === index ? openIndex : index);
   };
 
   return (
